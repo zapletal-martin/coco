@@ -1,0 +1,17 @@
+Project Path: reuse_single_file
+
+Source Tree:
+
+```
+reuse_single_file
+└── reuse_single_file.py
+
+```
+
+`/home/mzapletal/Sandbox/coco/benchmark/reuse_single_file/reuse_single_file.py`:
+
+```py
+def f(a, b):
+    a + b
+
+```

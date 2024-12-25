@@ -1,2 +1,2 @@
 # coco
-Coco Code Quality Benchmark
+Coco LLM Code Quality Benchmark
