@@ -2,14 +2,15 @@ import sys
 from openai import OpenAI
 
 context_file_path = sys.argv[1]
+prompt_file_path = sys.argv[2]
+
 with open(context_file_path, 'r') as file:
     context = file.read()
 
-prompt = """Write code that adds two numbers and
-multiplies the result by a third number. Respond with the code only.
-Reuse existing code where appropriate. Existing code: """ + context
+with open(prompt_file_path, 'r') as file:
+    prompt = file.read()
 
-print(prompt)
+prompt_context = prompt + context
 
 client = OpenAI()
 completion = client.chat.completions.create(
@@ -17,7 +18,7 @@ completion = client.chat.completions.create(
     store=True,
     messages=[
         {"role": "user",
-         "content": prompt}
+         "content": prompt_context}
     ]
 )
 

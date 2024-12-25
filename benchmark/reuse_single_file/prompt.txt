@@ -1,0 +1,1 @@
+Wrhite code that adds two numbers and multiplies the result by a third number. Respond with the code only. Reuse existing code where appropriate. Existing code:
