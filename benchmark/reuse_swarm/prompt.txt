@@ -1,0 +1,1 @@
+Write code that generates a random id and then adds a user with that id to the database. Respond with the code only. Reuse existing code where appropriate. Existing code:
